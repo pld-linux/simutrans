@@ -13,6 +13,9 @@ Source2:	%{name}
 Source3:	%{name}-redistribution.txt
 URL:		http://www.simutrans.de/
 ExclusiveArch:	%{ix86}
+Requires:	SDL
+Requires:	XFree86-libs
+Requires:	alsa-lib	
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
