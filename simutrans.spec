@@ -1,13 +1,14 @@
+%define		fversion	%(echo %{version} | tr . _ )
 Summary:	Transport and economic simulation game
 Summary(pl):	Symulator transportowo - ekononomiczny
 Name:		simutrans
-Version:	0_82_15_7exp
+Version:	0.84.8.4
 Release:	1
 License:	Other License(s), see package
 Group:		X11/Applications/Games
-Source0:	http://www.s-line.de/homepages/simutrans/data/simubase-%{version}.zip
+Source0:	http://hajo.simutrans.com/download/simubase-%{fversion}.zip
 # Source0-md5:	4f830ad55b66c01ad7d4c67548c80bc9
-Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.gz
+Source1:	http://hajo.simutrans.com/download/simulinux-%{fversion}.tar.gz
 # Source1-md5:	26615fb95d9f824fd973d9e5723b0b58
 Source2:	%{name}
 Source3:	%{name}-redistribution.txt
