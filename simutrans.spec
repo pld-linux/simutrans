@@ -14,6 +14,7 @@ Source2:	%{name}
 Source3:	%{name}-redistribution.txt
 URL:		http://www.simutrans.de/
 ExclusiveArch:	%{ix86}
+BuildRequires:	unzip
 Requires:	SDL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
