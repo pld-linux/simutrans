@@ -1,7 +1,7 @@
 Summary:	Transport and economic simulation game
 Summary(pl):	Symulator transportowo - ekononomiczny
 Name:		simutrans
-Version:	0_81_19exp
+Version:	0_81_24exp
 Release:	1
 License:	Other License(s), see package
 Group:		Applications/Games
