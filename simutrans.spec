@@ -12,7 +12,7 @@ Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.
 Source2:	%{name}
 Source3:	%{name}-redistribution.txt
 URL:		http://www.simutrans.de/
-ExclusiveArch:  %{ix86}
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
