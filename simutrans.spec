@@ -1,10 +1,10 @@
-Name:		simutrans
 Summary:	Transport and economic simulation game
 Summary(pl):	Symulator transportowo - ekononomiczny
-License:	Other License(s), see package
-Group:		Applications/Games
+Name:		simutrans
 Version:	0_81_19exp
 Release:	1
+License:	Other License(s), see package
+Group:		Applications/Games
 Source0:	http://www.s-line.de/homepages/simutrans/data/simubase-%{version}.zip
 Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.gz
 Source2:	%{name}
@@ -22,18 +22,16 @@ reinvest a good part of your earned cash to expand your
 infrastructural network. Your competitors won't sleep!
 
 %description -l pl
-Simutrans jest symulacj± transportowu i ekonomi z niektórymi aspektami
+Simutrans jest symulacj± transportu i ekonomii z niektórymi aspektami
 ekologii. Celem gry jest zbudowanie infrastruktury pozwalaj±cej na
 transport dóbr miêdzy ró¿nymi zak³adami przemys³owymi i miastami, oraz
 dostarczanie miastom wody i energii. Drugim celem jest zostanie tak
 bogatym jak to tylko mo¿liwe, przy czym trzeba reinwestowaæ du¿± czê¶æ
-zarobionych pieniêdzy w rozbudowê swojej sieci przemys³owej. Twoi
-konkurenci nie ¶pi±!
+zarobionych pieniêdzy w rozbudowê swojej sieci przemys³owej.
+Konkurenci nie ¶pi±!
 
 %prep
 %setup -q -n simutrans -b1
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,8 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc change_request.txt problem_report.txt readme.txt thanks.txt COPYRIGHT.txt
-%attr(755, root, root) %{_bindir}/*
-%attr(755, root, root) %{_libdir}/%{name}/%{name}
+%attr(755,root,root) %{_bindir}/*
+%dir %{_libdir}/%{name}
+%attr(755,root,root) %{_libdir}/%{name}/%{name}
 %{_libdir}/%{name}/*.tab
 %{_libdir}/%{name}/*.hex
 %{_libdir}/%{name}/*.pa?
