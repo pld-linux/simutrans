@@ -1,14 +1,14 @@
 Summary:	Transport and economic simulation game
 Summary(pl):	Symulator transportowo - ekononomiczny
 Name:		simutrans
-Version:	0_81_24exp
+Version:	0_82_10exp
 Release:	1
 License:	Other License(s), see package
 Group:		Applications/Games
 Source0:	http://www.s-line.de/homepages/simutrans/data/simubase-%{version}.zip
-# Source0-md5:	9484571d47e024e98a0630bb30ab8306
+# Source0-md5:	59f7478f4100611058201271185b90fb
 Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.gz
-# Source1-md5:	3a458f8d3220e1ba3943fe727152bb6d
+# Source1-md5:	c8b62a71ec65e8b107c4b410c50d309b
 Source2:	%{name}
 URL:		http://www.simutrans.de/
 ExclusiveArch:  %{ix86}
@@ -51,10 +51,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/%{name}
 %{_libdir}/%{name}/*.tab
-%{_libdir}/%{name}/*.hex
-%{_libdir}/%{name}/*.pa?
-%{_libdir}/%{name}/*.fnt
 %{_libdir}/%{name}/music
 %{_libdir}/%{name}/sound
 %{_libdir}/%{name}/text
 %{_libdir}/%{name}/pak
+%{_libdir}/%{name}/font
+%{_libdir}/%{name}/palette
