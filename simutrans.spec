@@ -1,6 +1,6 @@
 %define		fversion	%(echo %{version} | tr . _ )
 Summary:	Transport and economic simulation game
-Summary(pl):	Symulator transportowo - ekononomiczny
+Summary(pl):	Symulator transportowo - ekonomiczny
 Name:		simutrans
 Version:	0.84.8.4
 Release:	1
