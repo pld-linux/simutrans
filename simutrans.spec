@@ -6,6 +6,7 @@ Release:	1
 License:	Other License(s), see package
 Group:		Applications/Games
 Source0:	http://www.s-line.de/homepages/simutrans/data/simubase-%{version}.zip
+# Source0-md5:	9484571d47e024e98a0630bb30ab8306
 Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.gz
 # Source1-md5:	3a458f8d3220e1ba3943fe727152bb6d
 Source2:	%{name}
