@@ -4,7 +4,7 @@ Name:		simutrans
 Version:	0_82_15_7exp
 Release:	1
 License:	Other License(s), see package
-Group:		Applications/Games
+Group:		X11/Applications/Games
 Source0:	http://www.s-line.de/homepages/simutrans/data/simubase-%{version}.zip
 # Source0-md5:	4f830ad55b66c01ad7d4c67548c80bc9
 Source1:	http://www.s-line.de/homepages/simutrans/data/simulinux-%{version}.tar.gz
