@@ -7,9 +7,9 @@ Release:	1
 License:	Other License(s), see package
 Group:		X11/Applications/Games
 Source0:	http://hajo.simutrans.com/download/simubase-%{fversion}.zip
-# Source0-md5:	4f830ad55b66c01ad7d4c67548c80bc9
+# Source0-md5:	05957abf3ed48a698fafc383b8e2b236
 Source1:	http://hajo.simutrans.com/download/simulinux-%{fversion}.tar.gz
-# Source1-md5:	26615fb95d9f824fd973d9e5723b0b58
+# Source1-md5:	7bc7315a65c43a9b7491b3539d53ed35
 Source2:	%{name}
 Source3:	%{name}-redistribution.txt
 URL:		http://www.simutrans.de/
