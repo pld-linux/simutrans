@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/%{name}
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_libdir}/%{name}/*.tab
 %{_libdir}/%{name}/music
 %{_libdir}/%{name}/config
