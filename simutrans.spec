@@ -1,7 +1,7 @@
 %define		basever		0_84_16_2
 %define		fversion	%(echo %{version} | tr . _ )
 Summary:	Transport and economic simulation game
-Summary(pl):	Symulator transportowo - ekonomiczny
+Summary(pl.UTF-8):   Symulator transportowo - ekonomiczny
 Name:		simutrans
 Version:	0.84.16.4
 Release:	1
@@ -29,14 +29,14 @@ A second goal is to become as rich as possible, but you'll have to
 reinvest a good part of your earned cash to expand your
 infrastructural network. Your competitors won't sleep!
 
-%description -l pl
-Simutrans jest symulacj± transportu i ekonomii z niektórymi aspektami
-ekologii. Celem gry jest zbudowanie infrastruktury pozwalaj±cej na
-transport dóbr miêdzy ró¿nymi zak³adami przemys³owymi i miastami, oraz
+%description -l pl.UTF-8
+Simutrans jest symulacjÄ… transportu i ekonomii z niektÃ³rymi aspektami
+ekologii. Celem gry jest zbudowanie infrastruktury pozwalajÄ…cej na
+transport dÃ³br miÄ™dzy rÃ³Å¼nymi zakÅ‚adami przemysÅ‚owymi i miastami, oraz
 dostarczanie miastom wody i energii. Drugim celem jest zostanie tak
-bogatym jak to tylko mo¿liwe, przy czym trzeba reinwestowaæ du¿± czê¶æ
-zarobionych pieniêdzy w rozbudowê swojej sieci przemys³owej.
-Konkurenci nie ¶pi±!
+bogatym jak to tylko moÅ¼liwe, przy czym trzeba reinwestowaÄ‡ duÅ¼Ä… czÄ™Å›Ä‡
+zarobionych pieniÄ™dzy w rozbudowÄ™ swojej sieci przemysÅ‚owej.
+Konkurenci nie Å›piÄ…!
 
 %prep
 %setup -q -n simutrans -b1
