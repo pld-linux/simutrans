@@ -1,7 +1,7 @@
 %define		basever		0_84_16_2
 %define		fversion	%(echo %{version} | tr . _ )
 Summary:	Transport and economic simulation game
-Summary(pl.UTF-8):   Symulator transportowo - ekonomiczny
+Summary(pl.UTF-8):	Symulator transportowo - ekonomiczny
 Name:		simutrans
 Version:	0.84.16.4
 Release:	1
