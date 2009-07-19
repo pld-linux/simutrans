@@ -1,20 +1,17 @@
-%define		basever		0_84_16_2
-%define		fversion	%(echo %{version} | tr . _ )
+%define		fversion	%(echo %{version} | tr . - )
 Summary:	Transport and economic simulation game
 Summary(pl.UTF-8):	Symulator transportowo - ekonomiczny
 Name:		simutrans
-Version:	0.84.16.4
-Release:	1
+Version:	0.102.0
+Release:	0.1
 License:	Other License(s), see package
 Group:		X11/Applications/Games
-Source0:	http://hajo.simutrans.com/download/simubase-%{basever}.zip
-# Source0-md5:	d54e26ed81426c6a159760f40ef56e51
-Source1:	http://hajo.simutrans.com/download/simulinux-%{fversion}.tar.gz
-# Source1-md5:	da46a5b5e00eca77a9ebbf64d9135c58
-Source2:	%{name}
-Source3:	%{name}-redistribution.txt
-Source4:	%{name}.desktop
-URL:		http://www.simutrans.de/
+Source0:	http://dl.sourceforge.net/simutrans/simulinux_%{fversion}.zip
+# Source0-md5:	9e81346c422a744cab97848c6f8ab7cb
+Source1:	%{name}
+Source2:	%{name}-redistribution.txt
+Source3:	%{name}.desktop
+URL:		http://www.simutrans.com/
 ExclusiveArch:	%{ix86}
 BuildRequires:	unzip
 Requires:	SDL
@@ -39,22 +36,22 @@ zarobionych pieniędzy w rozbudowę swojej sieci przemysłowej.
 Konkurenci nie śpią!
 
 %prep
-%setup -q -n simutrans -b1
+%setup -q -n simutrans 
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -D %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/%{name}
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -d $RPM_BUILD_ROOT{%{_libdir}/%{name},%{_desktopdir}}
 cp -a * $RPM_BUILD_ROOT%{_libdir}/%{name}
-install %{SOURCE3} .
-install %{SOURCE4} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} .
+install %{SOURCE3} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc change_request.txt problem_report.txt readme.txt thanks.txt COPYRIGHT.txt %{name}-redistribution.txt
+%doc change_request.txt problem_report.txt readme.txt thanks.txt copyright.txt %{name}-redistribution.txt
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/%{name}
