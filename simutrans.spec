@@ -43,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 install -D %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -d $RPM_BUILD_ROOT{%{_libdir}/%{name},%{_desktopdir}}
 cp -a * $RPM_BUILD_ROOT%{_libdir}/%{name}
+%{__rm} -rf $RPM_BUILD_ROOT%{_libdir}/%{name}/*.txt
 install %{SOURCE2} .
 install %{SOURCE3} $RPM_BUILD_ROOT%{_desktopdir}
 
@@ -56,11 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/%{name}
 %{_desktopdir}/*.desktop
-%{_libdir}/%{name}/*.tab
-%{_libdir}/%{name}/music
-%{_libdir}/%{name}/config
-%{_libdir}/%{name}/sound
-%{_libdir}/%{name}/text
-%{_libdir}/%{name}/pak
-%{_libdir}/%{name}/font
-%{_libdir}/%{name}/palette
+%{_libdir}/%{name}/*
